@@ -1,0 +1,1082 @@
+* {
+     margin: 0;
+     box-sizing: border-box;
+}
+
+a {
+     text-decoration: none;
+}
+
+img {
+     vertical-align: bottom;
+}
+
+:disabled {
+     cursor: not-allowed;
+}
+
+button {
+     cursor: pointer;
+     padding: 0;
+}
+
+ul {
+     list-style: none;
+     padding: 0;
+}
+
+abbr[title] {
+     text-decoration: underline dotted;
+     -webkit-text-decoration: underline dotted;
+}
+
+/* Define the scroll bar style */
+::-webkit-scrollbar {
+     width: 7px;
+     /* Width of the scrollbar */
+     background-color: #F0F0F0;
+     /* Background color behind the scrollbar */
+}
+
+/* Define the scroll thumb */
+::-webkit-scrollbar-thumb {
+     background-color: #8820e3;
+     /* Color of the thumb */
+     border-radius: 3px;
+     /* Rounded corners */
+}
+
+/* Define the scroll track */
+::-webkit-scrollbar-track {
+     margin: 10px;
+     /* Margin around the track */
+}
+
+@font-face {
+     font-family: FuturaLT-Bold;
+     src: url(../Fonts/FuturaLT-Bold.ttf);
+     font-weight: 700;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: FuturaLT-BoldOblique;
+     src: url(../Fonts/FuturaLT-BoldOblique.ttf);
+     font-weight: 500;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: FuturaLT-Book;
+     src: url(../Fonts/FuturaLT-Book.ttf);
+     font-weight: 400;
+     font-display: swap;
+}
+
+html {
+     font-size: 15px;
+     scroll-behavior: smooth;
+}
+
+body {
+     font: 16px/1.2 FuturaLT-Bold, sans-serif;
+
+
+
+}
+
+.container {
+     max-width: 1200px;
+     margin: auto;
+     padding: 0 1rem;
+     /* outline: 1px solid red; */
+}
+
+.row {
+     display: flex;
+     flex-flow: row wrap;
+     margin: 0 -1rem;
+}
+
+[class^="col-"] {
+     flex: 1 0 auto;
+     padding: 0 1rem;
+}
+
+.col-1 {
+     flex-basis: 8.33%;
+     max-width: 8.33%;
+}
+
+.col-2 {
+     flex-basis: 16.66%;
+     max-width: 16.66%;
+}
+
+.col-3 {
+     flex-basis: 25%;
+     max-width: 25%;
+}
+
+.col-4 {
+     flex-basis: 33.33%;
+     max-width: 33.33%;
+}
+
+.col-5 {
+     flex-basis: 41.66%;
+     max-width: 41.66%;
+}
+
+.col-6 {
+     flex-basis: 50%;
+     max-width: 50%;
+}
+
+.col-7 {
+     flex-basis: 58.33%;
+     max-width: 58.33%;
+}
+
+.col-8 {
+     flex-basis: 66.66%;
+     max-width: 66.66%;
+}
+
+.col-9 {
+     flex-basis: 75%;
+     max-width: 75%;
+}
+
+.col-10 {
+     flex-basis: 83.33%;
+     max-width: 83.33%;
+}
+
+.col-11 {
+     flex-basis: 91.66%;
+     max-width: 91.66%;
+}
+
+.col-12 {
+     flex-basis: 100%;
+     max-width: 100%;
+}
+
+.flex {
+     display: flex;
+}
+
+.justify-right {
+     justify-content: right;
+}
+
+.align-center {
+     align-items: center;
+}
+
+.img-resp {
+     max-width: 100%;
+     height: auto;
+
+}
+
+/* wrap 1 start */
+.wrap-1.bc {
+     background-color: #ffcb0f;
+     line-height: 24px;
+     padding: 10px 0;
+}
+
+.space ul {
+     justify-content: space-between;
+
+}
+
+.space ul li a {
+     color: #000;
+}
+
+.space ul li a span {
+     padding-right: 10px;
+     /* display: block; */
+
+}
+
+.right {
+     justify-content: right;
+}
+
+.right li a {
+     margin: 0 10px;
+}
+
+.fa {
+     font-family: FuturaLT-Book;
+     color: #000;
+}
+
+.col-8 nav ul li:last-child a span.fa {
+     color: white;
+}
+
+
+
+/* wrap 1 End*/
+
+
+/* .wrap-2 start */
+.wrap-2 {
+     background-color: #222533;
+     position: sticky;
+     top: 0;
+     z-index: 100;
+
+}
+
+nav ul {
+     justify-content: end;
+}
+
+nav ul li {
+     margin: 15px 3px;
+     display: inline-block;
+}
+
+nav ul li a {
+
+     display: block;
+     padding: 3px 12px;
+     font-size: 18px;
+     color: #fff;
+     font-family: FuturaLT-Book, sans-serif;
+     line-height: 50px;
+}
+
+nav ul li a:hover {
+     color: #ffcb0f;
+}
+
+.fa.fa-search {
+     color: #ffcb0f;
+}
+
+.fa.fa-search:hover {
+     color: #8820e3;
+}
+
+.logo {
+     margin-top: 15px;
+     margin-bottom: 10px;
+
+}
+
+.logo h1 {
+     color: #ffcb0f;
+     font-size: 24px;
+     font-family: FuturaLT-BoldOblique, sans-serif;
+
+
+}
+
+.logo small {
+     color: #fff;
+     font-family: FuturaLT-Book, sans-serif;
+     font-size: 12px;
+     text-transform: capitalize;
+}
+
+
+
+.hamburger {
+     display: none;
+     cursor: pointer;
+}
+
+.hamburger .bar {
+     display: block;
+     width: 30px;
+     height: 3px;
+     margin: 5px 0;
+     transition: all 0.3s ease-in-out;
+     background-color: #fff;
+     text-align: center;
+}
+
+/* .wrap-2 End */
+
+
+/* .wrap-3 start */
+.wrap-3 {
+     background: url(../imgwebp/banner1.webp)no-repeat center center/cover;
+     max-width: 100%;
+     height: auto;
+     padding: 68px 0;
+     /* for scroll section */
+     scroll-margin-top: 70px;
+     /* filter: brightness(1.2); */
+
+}
+
+.wrap-3 h1 {
+     /* display: inline-block; */
+     font-size: 40px;
+     text-align: center;
+     color: #ffff;
+     font-family: FuturaLT-Book, sans-serif;
+     /* padding: 117px 0 0 0; */
+}
+
+.wrap-3 h2 {
+     font-size: 40px;
+     text-align: center;
+     color: #ffff;
+     font-family: FuturaLT-Bold, sans-serif;
+     font-size: 70px;
+     line-height: 52px;
+     padding: 38px 0 0 0;
+}
+
+.wrap-3 span {
+     display: block;
+     text-align: center;
+     color: #ffcb0f;
+     font-size: 70px;
+     font-family: FuturaLT-Bold, sans-serif;
+     /* padding: 17px 0 0 0; */
+}
+
+.wrap-3 p {
+     font-size: 23px;
+     text-align: center;
+     color: #ffff;
+     font-family: FuturaLT-Book, sans-serif;
+     /* padding: 37px 0 0 0; */
+}
+
+.button-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.btn {
+     display: flex;
+     justify-content: flex-start;
+}
+
+.button-link {
+     display: inline-block;
+     padding: 12px 24px;
+     background-color: #ffcb0f;
+     color: #fff;
+     text-decoration: none;
+     border: 2px solid #ffcb0f;
+     border-radius: 10px;
+     margin: 50px 0px;
+     font-size: 16px;
+     line-height: 13.02px;
+     font-family: FuturaLT-Bold, sans-serif;
+     width: 157px;
+     text-align: center;
+     transition: all .3s;
+     font-weight: bold;
+}
+
+.button-link:first-child {
+     margin-right: 28px;
+     /* Add margin to the right of the first button */
+}
+
+.button-link:hover {
+     background-color: #8638cb;
+}
+
+/* .wrap-3 End */
+
+
+/* .wrap-4 start */
+.wrap-4 {
+     padding: 50px 0;
+     /* for scroll section */
+     scroll-margin-top: 70px;
+
+}
+
+.wrap-4 h1 {
+     font-size: 40.78px;
+     text-align: left;
+     color: #ffcb0f;
+     font-family: FuturaLT-Bold, sans-serif;
+}
+
+.wrap-4 small {
+     font-size: 30px;
+     text-align: left;
+     color: #484848;
+     font-family: FuturaLT-Bold, sans-serif;
+     margin-bottom: 35px;
+     display: block;
+}
+
+.wrap-4 .para {
+     font-size: 15px;
+     /* margin-bottom: 25px; */
+     text-align: left;
+     color: #484848;
+     font-family: FuturaLT-Book, sans-serif;
+}
+
+.wrap-4 .para1 {
+     font-size: 15px;
+     padding-bottom: 25px;
+     /* margin-bottom: 25px; */
+     text-align: left;
+     color: #484848;
+     font-family: FuturaLT-Book, sans-serif;
+}
+
+
+
+/* .wrap-4 End */
+
+/* .wrap-5 Start */
+.wrap-5 {
+     background-color: #f2f7fa;
+     padding: 55px 0;
+
+
+}
+
+.wrap-5 .banner-text3 {
+     text-align: center;
+}
+
+.wrap-5 .banner-text3 h2 {
+     display: inline-block;
+     font-size: 30px;
+     color: #484848;
+     font-family: FuturaLT-Bold, sans-serif;
+     /* padding: 30px 0 0 0; */
+     margin: 25px 0;
+}
+
+.wrap-5 .banner-text3 p {
+     font-size: 15px;
+     color: #484848;
+     font-family: FuturaLT-Book, sans-serif;
+     margin: 0 0 35px;
+
+}
+
+.wrap-5 h2 {
+     text-transform: uppercase;
+     margin: 15px;
+     text-align: center;
+     font-size: 15px;
+     color: #484848;
+     font-family: FuturaLT-Bold, sans-serif;
+     /* padding: 10px; */
+     margin: 15px 0;
+}
+
+.wrap-5 p {
+     text-align: center;
+     font-size: 15px;
+     color: #484848;
+     font-family: FuturaLT-Book, sans-serif;
+}
+
+
+
+/* .wrap-5 end */
+
+/* .wrap-6 Start */
+.wrap-6 {
+     padding: 45px 0;
+
+}
+
+.wrap-6 h2 {
+
+     text-align: center;
+     font-size: 30px;
+     margin: 0 0 30px;
+     color: #484848;
+     font-family: FuturaLT-Bold;
+}
+
+.wrap-6 h3 {
+     margin: 15px 0 15px;
+     font-size: 17px;
+     color: #484848;
+     font-family: FuturaLT-Bold;
+}
+
+.wrap-6 p {
+     font-size: 19px;
+     color: #484848;
+     font-family: FuturaLT-Book, sans-serif;
+}
+
+.wrap-6 .btn {
+     padding: 15px 0;
+}
+
+/* .wrap-6 end */
+
+
+/* .wrap-6 start */
+.wrap-7 {
+     background: url(../imgwebp/projectBG.webp)no-repeat center center/cover;
+     max-width: 100%;
+     height: auto;
+     padding: 50px 0px;
+     /* for scroll section */
+     scroll-margin-top: 70px;
+}
+
+.wrap-7 h2 {
+     text-align: center;
+     font-size: 30px;
+     color: #ffffff;
+     font-family: FuturaLT-Bold, sans-serif;
+}
+
+.wrap-7 p {
+     text-align: center;
+     font-size: 15px;
+     color: #ffffff;
+     font-family: FuturaLT-Book, sans-serif;
+     margin: 25px 0 0;
+
+}
+
+.button-container {
+     display: flex;
+}
+
+.btnwl {
+     border: none;
+     background-color: transparent;
+     padding: 10px 20px;
+     border-radius: 5px;
+     color: #ffffff;
+     cursor: pointer;
+     white-space: nowrap;
+     margin: 20px 5px;
+     font-family: FuturaLT-Bold, sans-serif;
+     font-size: 16px;
+}
+
+.button-container .btnwl.active {
+     background-color: #282828;
+}
+
+.btnwl.active,
+.btnwl:hover {
+     background-color: #282828;
+     color: #ffffff;
+     border-radius: 10px;
+}
+
+
+.wrap-7 .col-6 img {
+     margin-bottom: 50px;
+}
+/* .row .col-6 img:hover {
+     transform: scale(1.1);} */
+/* .wrap7 end */
+
+
+/* .wrap8 Start*/
+.wrap-8 {
+     padding: 75px 0;
+     background: url(../imgwebp/ReviewBG.webp)no-repeat center center/cover;
+     max-width: 100%;
+     height: auto;
+     /* for scroll section */
+     scroll-margin-top: 70px;
+}
+
+.wrap-8 h2 {
+     text-align: center;
+     font-size: 30px;
+     margin-bottom: 30px;
+     color: #484848;
+     font-family: FuturaLT-Bold, sans-serif;
+}
+
+.wrap-8 p {
+     text-align: center;
+     font-size: 15px;
+     color: #484848;
+     margin-bottom: 30px;
+     font-family: FuturaLT-Book, sans-serif;
+}
+
+.wrap-8 .testi {
+     text-align: center;
+     padding: 40px 20px;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+     cursor: pointer;
+     transition: transform 0.5s;
+}
+
+.wrap-8 .testi img {
+     width: 50%;
+     margin-top: 20px;
+     border-radius: 50%;
+}
+
+.wrap-8 .testi:hover {
+     transform: translateY(-10px);
+}
+
+.fa-quote-left {
+     color: #ff523b;
+     font-size: 34px;
+}
+
+.testi p {
+     font-size: 15px;
+     margin: 12px 0;
+     color: #393939;
+     font-family: FuturaLT-Book, sans-serif;
+}
+
+.wrap-8 .testi h3 {
+     font-size: 15px;
+     margin: 12px 0;
+     color: #393939;
+     font-family: FuturaLT-Bold, sans-serif;
+}
+
+.wrap-8 .col-4 .testi img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+
+/* .wrap8 end */
+
+/* .wrap9  satrt*/
+.wrap-9 {
+     background-color: #fcd95b;
+     padding: 30px 0;
+     /* for scroll section */
+     scroll-margin-top: 70px;
+}
+
+.wrap-9 .info h2,
+.wrap-9 .info small {
+     font-size: 31px;
+     text-transform: uppercase;
+     color: #2f3240;
+     font-family: FuturaLT-Bold, sans-serif;
+     margin-top: 18px;
+}
+
+.wrap-9 .info small {
+     display: block;
+     letter-spacing: 2px;
+}
+
+form {
+     margin-top: 1rem;
+}
+
+form input,
+form textarea {
+     width: 100%;
+     padding: 0.5rem;
+     border-radius: 4px;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+     margin-bottom: 1rem;
+     resize: none;
+}
+
+form button[type="submit"] {
+     background-color: #8638cb;
+     color: #fff;
+     width: 100%;
+     height: 42px;
+     padding: 0.5rem 1rem;
+     border-radius: 4px;
+     border: none;
+     cursor: pointer;
+     text-align: center;
+}
+
+textarea {
+     width: 320px;
+     height: 42px;
+}
+
+input::placeholder,
+textarea::placeholder {
+     color: #8820e3;
+     font-family: FuturaLT-Bold, sans-serif;
+
+}
+
+input:focus,
+textarea:focus {
+     outline: none;
+     border: none;
+}
+
+
+/* .wrap9 end */
+
+
+/* .wrap10 start */
+.wrap-10 {
+     padding: 50px 0;
+     background: url(../imgwebp/FooterBG.webp)no-repeat center center/cover;
+     max-width: 100%;
+     height: auto;
+}
+
+.left li a span {
+     color: white;
+     /* flex-basis: 100%; */
+}
+
+.wrap-10 .col-3 h2 {
+     color: #ffffff;
+     margin-bottom: 30px;
+}
+
+.wrap-10 .col-3:first-child p {
+     color: #ffffff;
+     font-size: 16px;
+     font-family: FuturaLT-Book, sans-serif;
+
+}
+
+.wrap-10 .col-3 ul li {
+     margin-top: 18px;
+}
+
+.wrap-10 .col-3 ul li span {
+     color: #000;
+     font-size: 16px;
+
+}
+
+.slinks ul li:not(:last-child) {
+     margin-right: 10px;
+     /* Adjust the margin as needed */
+}
+
+.slinks ul li a {
+     display: block;
+     padding: 10px;
+     background-color: #ffcb0f;
+     border-radius: 50%;
+}
+
+.ex-links ul li a span {
+     color: white;
+}
+
+.ex-links ul li i {
+     color: #fff;
+     margin-right: 20px;
+     font-size: 10px;
+}
+
+.ex-links ul li a {
+     color: #fff;
+     font-size: 16px;
+     font-family: FuturaLT-Book, sans-serif;
+
+}
+
+.wrap-10 .col-3 .address i {
+     color: #fff;
+     margin-right: 15px;
+     font-size: 16px;
+}
+
+.wrap-10 .col-3 .address p {
+     color: #ffff;
+     margin-bottom: 20px;
+     font-size: 16px;
+     font-family: FuturaLT-Book, sans-serif;
+}
+
+/* .wrap10 end */
+
+
+
+/* wrap-11 start */
+.wrap-11 {
+     background-color: #1a1c27;
+     line-height: 80px;
+     text-align: center;
+     font-size: 15px;
+     font-family: FuturaLT-Bold, sans-serif;
+     color: #ffff;
+}
+
+footer span {
+     font-size: 15px;
+     color: #ffcb0f;
+     font-family: FuturaLT-Bold, sans-serif;
+
+}#back-to-top-btn {
+     display: none;
+     position: fixed;
+     bottom: 20px;
+     right: 7px;
+     z-index: 99;
+     font-size: 16px;
+     border: none;
+     outline: none;
+     background-color: #333; /* Change to your desired dark color */
+     color: #ffcb0f;
+     cursor: pointer;
+     padding: 10px;
+     border-radius: 4px;
+     opacity: 0.7;
+     transition: opacity 0.3s;
+   }
+
+   #back-to-top-btn:hover {
+     opacity: 1;
+   }
+
+
+/* .wrap11 end */
+
+/* responsive layout */
+
+@media screen and (max-width: 1040px) {
+     .bc {
+          display: none;
+     }
+     .wrap-9 .info h2,
+     .wrap-9 .info small {
+          font-size: 27px;
+     }
+
+}
+@media screen and (max-width: 980px){
+     .wrap-3 span {
+          font-size: 51px;
+     }
+     .wrap-4 h1 {
+          font-size: 35.78px;
+      }
+      .wrap-4 small {
+          font-size: 32px;
+      }
+      .wrap-5 h2 {
+          font-size: 18px;
+      }
+
+      .wrap-7 .col-12 button{
+          margin: 10px;
+
+      }
+      form button[type="submit"] {
+          padding: 0.3rem
+        }
+        .wrap-10 .col-3 .address p{
+
+          word-break: break-all;
+          font-size: 8px;
+        }
+        .wrap-10 .col-3:first-child p {
+          font-size: 11px;
+      }
+
+      .row .col-l-6 {
+          flex-basis: 50%;
+          max-width: 50%;
+     }
+}
+@media screen and (max-width: 768px) {
+     .bc {
+          display: none;
+     }
+     .wrap-3 h2 {
+          line-height: 82px;
+          font-size: 57px;
+     }
+
+     .wrap-3 span {
+          font-size: 57px;
+     }
+
+     .wrap-3 h1 {
+          font-size: 30px;
+
+     }
+
+     .wrap-4 h1 {
+          font-size: 54.78px;
+     }
+
+     .wrap-4 small {
+          font-size: 37px;
+     }
+
+     .wrap-4 .para1,
+     .wrap-4 .para {
+          font-size: 19px;
+     }
+
+     .image {
+          height: 300px;
+          width: 300px;
+     }
+
+     .wrap-5 .banner-text3 p {
+          font-size: 17px;
+     }
+
+     .wrap-5 h2 {
+          font-size: 21px;
+     }
+
+     .wrap-5 p {
+          font-size: 21px;
+          margin-bottom: 30px;
+     }
+
+     .wrap-6 h3 {
+          font-size: 12px;
+     }
+     .wrap-9 .info h2,
+     .wrap-9 .info small {
+          font-size: 20px;
+     }
+     .wrap-10 .col-3 h2 {
+          font-size: 19px;
+     }
+     .wrap-10 .col-3 .address p {
+          margin-left: -39px;
+     }
+     .wrap-2 ul li {
+          margin: 0px 12px;
+        }
+     .nav-menu ul{
+          position: fixed;
+          flex-direction: column;
+          text-align: center;
+          top: 67px;
+          width: 100%;
+          background-color: #8820e3;
+          left: -100%;
+          transition: 0.3s;
+        }
+        .nav-menu ul.active{
+          left: 0;
+        }
+     .hamburger{
+          display: inline-block;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+        .hamburger.active2 .b1 {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active2 .b2 {
+          opacity: 0;
+        }
+        .hamburger.active2 .b3 {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+        .wrap-7 .button-container{
+          flex-direction: column;
+        }
+          .row .col-m-6 {
+          flex-basis: 50%;
+          max-width: 50%;
+        }
+}
+@media (max-width: 460px) {
+     .logo small {
+          white-space: nowrap;
+        }
+     .wrap-3 h1 {
+          font-size: 25px;
+     }
+
+     .wrap-3 h2 {
+          font-size: 30px;
+          line-height: 25px;
+     }
+     .wrap-3 span {
+          font-size: 28px;
+     }
+     .wrap-3 p {
+          font-size: 20px;
+     }
+      .wrap-4 h1 {
+          font-size: 25px;
+     }
+     .wrap-4 small{
+          font-size: 30px;
+     }
+     .wrap-5 p {
+
+          margin-bottom: 30px;
+      }
+      .wrap-6 h3 {
+          font-size: 20px;
+      }
+      .wrap-7 p{
+          margin: 25px 0;
+      }
+      .wrap-7 .col-12 button{
+          margin: 10px;
+
+      }
+     .wrap-8 .testi {
+          margin-bottom: 30px;
+        }
+        .wrap-9 .info h2, .wrap-9 .info small {
+          font-size: 19px;
+        }
+        .wrap-10 .col-3:first-child p {
+          font-size: 13px;
+        }
+        form button[type="submit"] {
+          padding: 0.5rem
+        }
+     .row .col-sm-12 {
+          flex-basis: 100%;
+          max-width: 100%;
+     }
+     .row .col-sm-6 {
+          flex-basis: 50%;
+          max-width: 50%;
+     }
+     .wrap-10.left{
+          margin-top: 20px;
+     }
+     .slinks ul li a{
+          padding: 5px;
+     }
+     .wrap-10 .address{
+          max-width: 100%;
+     }
+     .wrap-10 .col-3:nth-child(3) h2, .wrap-10 .col-3:nth-child(4) h2{
+          margin-top: 30px;
+     }
+   .wrap-10 .col-3 .address p{
+     margin-left: 0px;
+     max-width: 100%;
+     word-break: break-all;
+     font-size: 10px;
+   }
+
+}
